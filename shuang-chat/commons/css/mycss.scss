@@ -1,0 +1,58 @@
+/* 当行顶部区域样式 */
+.top-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 88rpx;
+	padding-top: var(--status-bar-height); /* 解决遮盖手机的功能栏区域 */
+	box-shadow: 0px 0.5px 0px 0px rgba(0,0,0,0.1);
+	z-index: 1;
+		
+	/* 顶部导航左侧区域 */
+	.top-bar-left {
+		margin-left: 32rpx;
+		image {
+			width: 68rpx;
+			height: 68rpx;
+			border-radius: 16rpx;
+		}
+	}
+	
+	/* 顶部导航中间区域 */
+	.top-bar-center {
+		margin-left: 80rpx;
+		image {
+			width: 88rpx;
+			height: 42rpx;
+		}
+	}
+	
+	/* 顶部导航右侧区域 */
+	.top-bar-right {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 150rpx;
+		height: 100%;
+		// background-color: red;
+		.search {
+			display: inline-block;
+			padding: 10rpx 0;
+		}
+		
+		.add {
+			display: inline-block;
+			padding: 10rpx 0;
+		}
+		
+		image {
+			width: 52rpx;
+			height: 52rpx;
+			margin-right: 32rpx;
+		}
+	}
+}
